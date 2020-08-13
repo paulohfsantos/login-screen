@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login - Sysmax</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/fontawesome.min.js"></script>
+</head>
+<body>
+
+    <section class="bg-dark d-flex align-items-center" id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2 class="text-center text-light pb-4">Welcome to Sysmax, login to continue...</h2>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 m-auto">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 col-sm-12 m-auto p-5 bg-light rounded">
+                            <form method="POST" id="form" name="form">
+                                <div class="form-group">
+                                    <label for="emailInput">Email address</label>
+                                    <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="example@example.com" onclick="validateEmail()" required>
+                                    <small id="email">Required*</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="passInput">Password</label>
+                                    <input type="password" class="form-control" id="passInput" placeholder="********" required maxlength="8">
+                                    <p class="m-0" id="alpha"><strong>Must contain 8 alphanumeric digits</strong></p>
+                                    <small id="pass">Required*</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dateInput">Today is</label>
+                                    <input type="date" class="form-control" id="dateInput" required>
+                                    <small id="date">Required</small>
+                                </div>
+                                <button id="submit" type="submit" class="btn btn-primary btn-secondary" disabled>Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="./js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script> 
+    
+</body>
+</html>
